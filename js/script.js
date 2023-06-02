@@ -70,3 +70,23 @@ switch(answer){
     case "b":
         document.getElementById("quiz").innerHTML += "Perfect, you got it right!"
 }
+
+//条件2つまでならif, それ以上はswitchを使うのが便利
+
+//function
+function myName(){
+    return "Yuka"
+}
+let firstName = myName()
+console.log(firstName)
+
+document.querySelector(".container h1").innerHTML += " " + firstName
+
+function changeBg(bgColor){ //changeBgというfunctionにbgColorを代入
+    document.querySelector("body").style.backgroundColor = bgColor
+}
+
+//console内でfontの大きさを操作, functionの後ろの名前で操作可能↓
+function textResize(newFontSize){
+    document.querySelector("html").style.fontSize = newFontSize
+}
